@@ -2,13 +2,13 @@ import { footerColumns } from '../content/siteContent'
 
 function SiteFooter() {
   return (
-    <footer className="border-t border-black/5 bg-[#e4e8ef]/85">
+    <footer className="border-t border-black/5 bg-[#dde2e9]">
       <div className="mx-auto grid w-full max-w-[1220px] gap-10 px-5 py-10 md:grid-cols-4 lg:px-8">
         <div>
-          <h3 className="text-sm font-semibold tracking-wide text-[#15171d]">TRINCOMALEE HEROES</h3>
+          <h3 className="text-sm font-semibold tracking-wide text-[#15171d]">Trincomalee Heroes</h3>
           <p className="mt-4 text-sm leading-relaxed text-[#646974]">
-            The Leo Club of Trincomalee Heroes is a part of Lions Clubs International, the world's largest
-            service organization.
+            Empowering youth, transforming communities, and building a legacy of service in the heart of
+            Trincomalee.
           </p>
         </div>
 
@@ -24,13 +24,15 @@ function SiteFooter() {
         ))}
 
         <div>
-          <h3 className="text-[11px] font-semibold tracking-[0.2em] text-[#9d350f]">CONNECT</h3>
-          <p className="mt-4 text-lg tracking-[0.12em] text-[#6c7385]">@RETWEET</p>
-          <p className="mt-3 text-sm leading-relaxed text-[#646974]">
-            Trincomalee, Eastern Province,
-            <br />
-            Sri Lanka
-          </p>
+          <h3 className="text-[11px] font-semibold tracking-[0.2em] text-[#9d350f]">STAY CONNECTED</h3>
+          <div className="mt-4 flex items-center gap-3 text-[#647082]">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#c4ccd7]">
+              f
+            </span>
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#c4ccd7]">
+              ◦
+            </span>
+          </div>
         </div>
       </div>
 

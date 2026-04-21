@@ -1,21 +1,19 @@
-import CtaSection from './components/CtaSection'
-import HeroSection from './components/HeroSection'
-import LegacySection from './components/LegacySection'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import AboutPage from './pages/AboutPage'
+import HomePage from './pages/HomePage'
 import SiteFooter from './components/SiteFooter'
 import SiteHeader from './components/SiteHeader'
-import StatsSection from './components/StatsSection'
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#f2f1f4]">
       <SiteHeader />
 
-      <main className="mx-auto w-full max-w-[1220px] px-5 pb-16 pt-10 lg:px-8 lg:pt-14">
-        <HeroSection />
-        <LegacySection />
-        <StatsSection />
-        <CtaSection />
-      </main>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
 
       <SiteFooter />
     </div>

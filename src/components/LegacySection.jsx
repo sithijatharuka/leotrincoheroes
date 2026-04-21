@@ -1,4 +1,4 @@
-import { highlights } from '../content/siteContent'
+import { homeHighlights } from '../content/siteContent'
 
 function LegacySection() {
   return (
@@ -31,7 +31,7 @@ function LegacySection() {
           </p>
 
           <ul className="mt-7 space-y-3 text-sm font-medium tracking-wide text-[#21232a]">
-            {highlights.map((item) => (
+            {homeHighlights.map((item) => (
               <li key={item} className="flex items-center gap-3">
                 <span className="inline-block h-2.5 w-2.5 rounded-full bg-[#bf3f12] shadow-[0_0_0_4px_rgba(191,63,18,0.14)]" />
                 {item}

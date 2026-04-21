@@ -1,4 +1,4 @@
-import { stats } from '../content/siteContent'
+import { homeStats } from '../content/siteContent'
 
 function StatsSection() {
   return (
@@ -8,7 +8,7 @@ function StatsSection() {
       </h2>
 
       <div className="mt-10 grid gap-4 md:grid-cols-3">
-        {stats.map((stat) => (
+        {homeStats.map((stat) => (
           <article key={stat.label} className="relative overflow-hidden rounded-3xl border border-black/5 bg-[#f1f1f5] p-6">
             <p className="text-center text-[clamp(2.1rem,4.5vw,3.2rem)] font-bold text-[#bf3f12]">{stat.value}</p>
             <p className="mt-1 text-center text-[10px] font-semibold tracking-[0.22em] text-[#2b2d33]">{stat.label}</p>
