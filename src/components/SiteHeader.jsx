@@ -4,6 +4,7 @@ import { navItems } from '../content/siteContent'
 const navLinks = {
   HOME: '/',
   ABOUT: '/about',
+  'WHAT WE DO': '/what-we-do',
 }
 
 function SiteHeader() {
@@ -20,6 +21,7 @@ function SiteHeader() {
               {navLinks[item] ? (
                 <NavLink
                   to={navLinks[item]}
+                  end={item === 'HOME'}
                   className={({ isActive }) =>
                     `text-xs tracking-[0.11em] text-[#272a31] transition-colors hover:text-[#bf3f12] ${
                       isActive ? 'border-b border-[#bf3f12] pb-1 text-[#bf3f12]' : ''
