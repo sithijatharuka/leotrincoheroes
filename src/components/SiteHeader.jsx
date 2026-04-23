@@ -5,6 +5,7 @@ const navLinks = {
   HOME: '/',
   ABOUT: '/about',
   'WHAT WE DO': '/what-we-do',
+  CONTACT: '/contact',
 }
 
 function SiteHeader() {

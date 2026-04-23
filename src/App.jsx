@@ -1,5 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
 import HomePage from './pages/HomePage'
 import WhatWeDoPage from './pages/WhatWeDoPage'
 import SiteFooter from './components/SiteFooter'
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/what-we-do" element={<WhatWeDoPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
 
